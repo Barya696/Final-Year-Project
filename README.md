@@ -7,7 +7,7 @@
 
 - 📫 How to reach me **baryaelimelec@gmail.com**
 
-- ⚡ Fun fact **I am a Network Enginneer love both coding and configuring routers**
+- ⚡ Fun fact **I am a Network Enginneer that loves both coding and configuring routers😂😂😂**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
