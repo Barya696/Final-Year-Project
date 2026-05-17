@@ -1,0 +1,105 @@
+@import "tailwindcss";
+
+/* Tailwind v4 theme tokens (enables classes like bg-background, text-muted-foreground, etc.) */
+@theme {
+  --radius: 0.75rem;
+
+  /* Core */
+  --color-background: oklch(1 0 0);
+  --color-foreground: oklch(0.18 0 0);
+  --color-card: oklch(1 0 0);
+  --color-card-foreground: oklch(0.18 0 0);
+  --color-popover: oklch(1 0 0);
+  --color-popover-foreground: oklch(0.18 0 0);
+
+  /* Brand + UI */
+  --color-primary: oklch(0.55 0.16 260);
+  --color-primary-foreground: oklch(0.98 0 0);
+  --color-secondary: oklch(0.96 0 0);
+  --color-secondary-foreground: oklch(0.22 0 0);
+  --color-muted: oklch(0.97 0 0);
+  --color-muted-foreground: oklch(0.52 0 0);
+  --color-accent: oklch(0.95 0 0);
+  --color-accent-foreground: oklch(0.22 0 0);
+
+  --color-border: oklch(0.90 0 0);
+  --color-input: oklch(0.90 0 0);
+  --color-ring: oklch(0.62 0.12 260);
+
+  --color-destructive: oklch(0.62 0.23 25);
+  --color-destructive-foreground: oklch(0.98 0 0);
+
+  /* App-specific tokens used by your components */
+  --color-header: rgb(29, 64, 114);
+  --color-header-foreground: oklch(0.98 0 0);
+
+  --color-sidebar: rgb(34, 44, 57);
+  --color-sidebar-foreground: oklch(0.98 0 0);
+  --color-sidebar-border: rgba(52, 83, 128, 0.3);
+  --color-sidebar-accent: rgb(45, 61, 83);
+  --color-sidebar-primary: rgb(102, 179, 255);
+
+  --color-pending: oklch(0.78 0.16 85);
+  --color-validated: oklch(0.68 0.18 145);
+  --color-returned: oklch(0.70 0.20 35);
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--color-background);
+  color: var(--color-foreground);
+}
+
+/* Small custom styles used by ScheduleTable */
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.admin-table th,
+.admin-table td {
+  padding: 0.75rem 0.75rem;
+  border-bottom: 1px solid color-mix(in oklab, var(--color-border) 70%, transparent);
+  text-align: left;
+  vertical-align: middle;
+}
+
+.admin-table thead th {
+  background: color-mix(in oklab, var(--color-muted) 70%, transparent);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--color-muted-foreground);
+}
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.15rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.status-pending {
+  background: color-mix(in oklab, var(--color-pending) 15%, transparent);
+  color: var(--color-pending);
+}
+
+.status-validated {
+  background: color-mix(in oklab, var(--color-validated) 15%, transparent);
+  color: var(--color-validated);
+}
+
+.status-returned {
+  background: color-mix(in oklab, var(--color-returned) 15%, transparent);
+  color: var(--color-returned);
+}
