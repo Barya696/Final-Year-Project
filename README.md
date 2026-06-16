@@ -1,4 +1,4 @@
-<h1 align="center">Hi 👋, I'm Baria Gaougue Elimelec</h1>
+<h1 align="center">Hi 👋, I'm Baria Gaougue </h1>
 <h3 align="center">A passionate full-stack developer from Chad-Rwanda</h3>
 
 - 🔭 I’m currently working on [University Teaching Hours Management and Tracking System (UTHMTS)](https://github.com/Barya696/Final-Year-Project.git)
